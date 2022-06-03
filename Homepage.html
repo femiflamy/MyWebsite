@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Homepage - Paul Oladapo</title>
+    <link href="cssfile.css" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+<body>
+
+
+
+
+  <div class="bg-img">
+        <p style="background-image: url('home3.jpg');
+                min-height: 750px;
+
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          /* Needed to position the navbar */
+          position: relative;">
+          </p>
+
+          /* Header for Page content */
+          <h1 style="  position: absolute;
+                        top: 30%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-family:'Academy engraved LET';
+                        color: #def2f1;
+                        font-size: 60px;">PAUL</h1>
+
+                        <h1 style="  position: absolute;
+                                      top: 30%;
+                                      left: 68%;
+                                      transform: translate(-50%, -50%);
+                                      font-family:'Academy engraved LET';
+                                      color: #12c998;
+                                      font-size: 60px;">OLADAPO</h1>
+
+          <p style="  position: absolute;
+                        top: 37%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-family:'PT Serif caption';
+                        color: #def2f1;
+                        font-size: 40px;">I am a</p>
+
+
+                        <p style="  position: absolute;
+                                      top: 37%;
+                                      left: 66%;
+                                      transform: translate(-50%, -50%);
+                                      font-family:'PT Serif caption';
+                                      color: #12c998;
+                                      font-weight: bold;
+                                      font-size: 40px;">Web Developer.</p>
+
+                        /* button start */
+                          <button style="
+                          position: absolute;
+                            top: 50%;
+                          left: 57%;
+                          transform: translate(-50%, -50%);
+                          -ms-transform: translate(-50%, -50%);
+                          background-color: #3aafa9;
+                          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                          color: #def2f1;
+                          font-size: 32px;
+                          padding: 16px 30px;
+                          width: 200px;
+                          border: none;
+                          cursor: pointer;
+                          border-radius: 5px;
+                          text-align: center;"
+                          onclick="myFunction()"
+                          onMouseOver="this.style.color='#def2f1'"
+                          onMouseOut="this.style.color='#686658'"> Start</button>
+
+                                      <p id="demo"></p>
+                                      /*javascript for button events start*/
+                                        /*call button function*/
+                                      <script> function myFunction() {
+
+                                              alert("Welcome to my website!");
+                                                let message;
+                                              let name = prompt("Please enter your name:");
+                                                message = alert("Welcome " + name + "! How are you today?");
+                                              alert("Let us play a game");
+                                              let message2;
+                                              let message3;
+                                              var number1 = prompt("Please enter your first number:");
+                                              var number2 = prompt("Please enter your second number:");
+                                              function Sum2numbers(a, b) {
+                                              return parseInt(a) + parseInt(b);
+                                            }
+                                            message2 = alert("The sum of your two numbers is " + Sum2numbers(number1,number2));
+
+                                            if (Sum2numbers(number1,number2) > 10) {
+                                            message3 = alert("That is a big number.") ;
+                                          } else {
+                                            message3 = alert("That is a small number.");
+                                          }
+
+                                          let y = prompt("Will you like you play again? (yes/no):");
+                                          while (y.toUpperCase()!="NO")
+                                          {
+                                              if (y.toUpperCase()=="YES")
+                                              {
+                                                let message2;
+                                                let message3;
+                                                var number1 = prompt("Please enter your first number:");
+                                                var number2 = prompt("Please enter your second number:");
+                                                function Sum2numbers(a, b) {
+                                                return parseInt(a) + parseInt(b);
+                                              }
+                                              message2 = alert("The sum of your two numbers is " + Sum2numbers(number1,number2));
+
+                                              if (Sum2numbers(number1,number2) > 10) {
+                                              message3 = alert("That is a big number.") ;
+                                            } else {
+                                              message3 = alert("That is a small number.");
+                                            }
+                                            y = prompt("Will you like you play again? (yes/no):");
+                                              }
+                                          }
+                                            alert("Thank you for playing, Have a nice day.")
+                                              document.getElementById("demo").innerHTML = text;}</script>
+
+    <div class="container">
+      <div class="topnav">
+      <img src="avatar.jpeg" alt="Avatar" class="avatar">
+        <a href="Homepage.html">HOME</a>
+        <a href="AboutMe.html">ABOUT ME</a>
+        <a href="Resume.html">RESUME</a>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
