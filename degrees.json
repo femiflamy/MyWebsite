@@ -1,22 +1,22 @@
 {
     "degrees": [
       {
-          "school": "Bowen University",
-          "program": "Computer Science",
-          "type": "BSC",
-          "year": "2013"
+          "School": "Bowen University",
+          "Program": "Computer Science",
+          "Type": "BSC",
+          "Year": "2013"
       },
       {
-          "school": "Seneca College",
-          "program": "Project Management & IT",
-          "type": "PgD",
-          "year": "2015"
+          "School": "Seneca College",
+          "Program": "Project Management & IT",
+          "Type": "PgD",
+          "Year": "2015"
       },
       {
-          "school": "Boston University",
-          "program": "Computer Information Systems",
-          "type": "MSC",
-          "year": "2022"
+          "School": "Boston University",
+          "Program": "Computer Information Systems",
+          "Type": "MSC",
+          "Year": "2022"
       }
     ]
 }
