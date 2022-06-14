@@ -1,28 +1,22 @@
 {
     "degrees": [
       {
-        "degree": {
           "school": "Bowen University",
           "program": "Computer Science",
           "type": "BSC",
           "year": "2013"
-        }
       },
       {
-        "degree": {
           "school": "Seneca College",
           "program": "Project Management & IT",
           "type": "PgD",
           "year": "2015"
-        }
       },
       {
-        "degree": {
           "school": "Boston University",
           "program": "Computer Information Systems",
           "type": "MSC",
           "year": "2022"
-        }
-      },
+      }
     ]
 }

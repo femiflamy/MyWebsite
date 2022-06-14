@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fetch Json</title>
+    <link href="cssfile.css" rel="stylesheet">
+    <meta charset="UTF-8">
+
+</head>
+<body>
+<style>
+html {
+  box-sizing:border-box;
+  font-size: 16px;
+}
+
+*,*:before,*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 1rem;
+  font-family:'PT Serif caption';
+  line-height: 1.5;
+}
+
+table {
+  position:absolute;
+  top: 30%;
+  left: 20%;
+  font-family:'Academy engraved LET';
+  border-collapse: collapse;
+  width: 70%;
+}
+
+td,th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+</style>
+
+  <div class="bg-img" >
+
+    <h1 style="  position: absolute;
+                  top: 10%;
+                  left: 35%;
+                  transform: translate(-50%, -50%);
+                  border-bottom: 1px solid #17252a;
+                  color: #17252a;
+                  font-size: 40px;
+                  font-family:'Academy engraved LET'">EDUCATION HISTORY</h1>
+
+
+
+                          <script>
+                            fetch("degrees.json")
+                            .then((response) => response.json())
+                            .then((data) => {
+                              console.log("My Data ", data);
+
+                              const table = document.createElement("table");
+                              let tr = document.createElement("tr");
+                              let th1 = document.createElement("th");
+                              let th2 = document.createElement("th");
+                              let th3 = document.createElement("th");
+                              let th4 = document.createElement("th");
+
+                              let td1 = document.createElement("td");
+                              let td2 = document.createElement("td");
+                              let td3 = document.createElement("td");
+                              let td4 = document.createElement("td");
+
+                              let content = document.createTextNode("School");
+                              th1.appendChild(content);
+
+                              content = document.createTextNode("Program");
+                              th2.appendChild(content);
+
+                              content = document.createTextNode("Type");
+                              th3.appendChild(content);
+
+                              content = document.createTextNode("Year");
+                              th4.appendChild(content);
+
+                              tr.appendChild(th1);
+                              tr.appendChild(th2);
+                              tr.appendChild(th3);
+                              tr.appendChild(th4);
+                              table.appendChild(tr);
+
+                              //Loop for rows
+                              data.degrees.forEach((element, index) => {
+                                console.log('Row data', element);
+
+                                tr = document.createElement('tr');
+                                td1 = document.createElement('td');
+                                td2 = document.createElement('td');
+                                td3 = document.createElement('td');
+                                td4 = document.createElement('td');
+
+                                content = document.createTextNode(element.School);
+                                td1.appendChild(content);
+
+                                content = document.createTextNode(element.Program);
+                                td2.appendChild(content);
+
+                                content = document.createTextNode(element.Type);
+                                td3.appendChild(content);
+
+                                content = document.createTextNode(element.Year);
+                                td4.appendChild(content);
+
+                                tr.appendChild(td1);
+                                tr.appendChild(td2);
+                                tr.appendChild(td3);
+                                tr.appendChild(td4);
+
+                                table.appendChild(tr);
+                              });
+                              document.body.appendChild(table);
+
+
+                            });
+                            </script>
+
+                            <p style="
+                                        position: absolute;
+                                        top: 50%;
+                                       left: 85%;">
+                                      <input type="submit" name="submit" value="Go Back" onClick="myFunction()">
+                            <script>
+                              function myFunction() {
+                                window.location.href="Resume.html";
+                              }
+                            </script></p>
+
+    <div class="container">
+      <div class="topnav">
+      <img src="avatar.jpeg" alt="Avatar" class="avatar">
+        <a href="Homepage.html">HOME</a>
+        <a href="AboutMe.html">ABOUT ME</a>
+        <a href="Resume.html">RESUME</a>
+        <a href="webform.html">CONTACT ME</a>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
