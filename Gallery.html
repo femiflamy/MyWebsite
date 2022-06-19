@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery - Paul Oladapo</title>
+    <link href="cssfile.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
+</head>
+<body>
+  <style>
+  .image {
+    vertical-align: middle;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 15%;
+    left: 25%;
+    background-color: #5a5560;
+    border-radius: 8px;
+      padding: 5px 5px;
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-bottom:50px;
+  }
+
+  .image2 {
+    vertical-align: middle;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 15%;
+    left: 65%;
+    background-color: #5a5560;
+    border-radius: 8px;
+      padding: 5px 5px;
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-bottom:50px;
+  }
+
+  .image3 {
+    vertical-align: middle;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 50%;
+    left: 25%;
+    background-color: #5a5560;
+    border-radius: 8px;
+      padding: 5px 5px;
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-bottom:50px;
+  }
+
+  .image4 {
+    vertical-align: middle;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 50%;
+    left: 65%;
+    background-color: #5a5560;
+    border-radius: 8px;
+      padding: 5px 5px;
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-bottom:50px;
+  }
+
+  </style>
+
+  <div class="bg-img">
+
+
+
+    <h1 style="  position: absolute;
+                  top: 10%;
+                  left: 30%;
+                  transform: translate(-50%, -50%);
+                  border-bottom: 1px solid #17252a;
+                  color: #17252a;
+                  font-size: 40px;
+                  font-family:'Academy engraved LET'">GALLERY</h1>
+
+
+
+                  <table >
+                  <thead>
+                  </thead>
+                  <tbody >
+                      <!-- First Row -->
+
+
+                     <tr>
+                        <td >
+                          <div id="app">
+                          <img :src="img1" @mouseover="img1 = img11" alt="Avatar" class="image"/>
+                        </div>
+                            <p style="  position: absolute;
+                                        text-align: left;
+                                        top: 47%;
+                                        left: 25%;
+                                        color: #17252a;
+                                        font-size: 13px;
+                                        font-family:'PT Serif caption'">TRADITIONAL WEDDING</p><br>
+                            <p style="  position: absolute;
+                                        text-align: left;
+                                        top: 49%;
+                                        left: 25%;
+                                        color: #12c998;
+                                        font-size: 13px;
+                                        font-family:'PT Serif caption'">LAGOS, NIGERIA. (2019)</p><br></td>
+                      <td>
+                        <div id="app2">
+                        <img :src="img2" @mouseover="img2 = img22" alt="Avatar" class="image2"/>
+                      </div>
+                         <p style="  position: absolute;
+                                     text-align: left;
+                                     top: 47%;
+                                     left: 65%;
+                                     color: #17252a;
+                                     font-size: 13px;
+                                     font-family:'PT Serif caption'">WEDDING RECEPTION</p><br>
+                                     <p style="  position: absolute;
+                                                 text-align: left;
+                                                 top: 49%;
+                                                 left: 65%;
+                                                 color: #12c998;
+                                                 font-size: 13px;
+                                                 font-family:'PT Serif caption'">LAGOS, NIGERIA. (2019)</p><br></td>
+                               </tr>
+                    <!-- Second Row -->
+                    <tr>
+                    <td >
+
+                      <div id="app3">
+                      <img :src="img3" @mouseover="img3 = img33" alt="Avatar" class="image3"/>
+                                </div>
+                      <p style="  position: absolute;
+                                  text-align: left;
+                                  top: 82%;
+                                  left: 25%;
+                                  color: #17252a;
+                                  font-size: 13px;
+                                  font-family:'PT Serif caption'">IN A NATIVE ATTIRE</p><br>
+                      <p style="  position: absolute;
+                                  text-align: left;
+                                  top: 84%;
+                                  left: 25%;
+                                  color: #12c998;
+                                  font-size: 13px;
+                                  font-family:'PT Serif caption'">LAGOS, NIGERIA. (2016 & 2018)</p><br><br></td>
+                    <td>
+
+                      <div id="app4">
+                      <img :src="img4" @mouseover="img4 = img44" alt="Avatar" class="image4"/>
+                                </div>
+                      <p style="  position: absolute;
+                                  text-align: left;
+                                  top: 82%;
+                                  left: 65%;
+                                  color: #17252a;
+                                  font-size: 13px;
+                                  font-family:'PT Serif caption'">CHURCH WEDDING</p>
+                                  <p style="  position: absolute;
+                                              text-align: left;
+                                              top: 84%;
+                                              left: 65%;
+                                              color: #12c998;
+                                              font-size: 13px;
+                                              font-family:'PT Serif caption'">LAGOS, NIGERIA. (2019)</p><br><br></td>
+                            </tr>
+                                        </tbody>
+                                          </table>
+
+                                            <script>
+                                                new Vue({
+                                                    el: '#app',
+                                                      data() {
+                                          return {
+                                            img1: "imgg1.jpg",
+                                            img11: "img11.jpeg",
+                                            hover: false
+                                          }
+                                                    }
+                                                });
+
+                                                    new Vue({
+                                                        el: '#app2',
+                                                          data() {
+                                              return {
+                                                img2: "img2.jpeg",
+                                                img22: "img22.jpeg",
+                                                hover: false
+                                              }
+                                                        }
+                                                    });
+
+                                                    new Vue({
+                                                        el: '#app3',
+                                                          data() {
+                                              return {
+                                                img3: "img6.jpg",
+                                                img33: "img66.jpg",
+                                                hover: false
+                                              }
+                                                        }
+                                                    });
+
+                                                    new Vue({
+                                                        el: '#app4',
+                                                          data() {
+                                              return {
+                                                img4: "img4.jpeg",
+                                                img44: "img44.jpeg",
+                                                hover: false
+                                              }
+                                                        }
+                                                    });
+                                             </script>
+
+
+    <div class="container">
+      <div class="topnav">
+              <img src="avatar.jpeg" alt="Avatar" class="avatar">
+        <a href="Homepage.html">HOME</a>
+        <a href="AboutMe.html">ABOUT ME</a>
+        <a href="Resume.html">RESUME</a>
+        <a href="webform.html">CONTACT ME</a>
+        <a href="Gallery.html">GALLERY</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
