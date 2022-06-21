@@ -6,7 +6,7 @@ body {font-family: Arial, Helvetica, sans-serif}
   background-color: #d2f2f1;
 
 
-  min-height: 750px;
+  min-height: 800px;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -27,7 +27,7 @@ position: absolute;
 left: 0;
 top: 0;
 padding-top: 0px;
-min-height: 750px;
+min-height: 800px;
 background-color: #3aafa9;
 }
 
@@ -78,7 +78,6 @@ img {
 }
 
 
-
 /* On screens that are 992px wide or less, hide the sidebar*/
 @media screen and (max-width: 992px) {
   .container {
@@ -98,7 +97,7 @@ img {
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 600px) {
   .bg-img  {
     text-align: left;
   }
